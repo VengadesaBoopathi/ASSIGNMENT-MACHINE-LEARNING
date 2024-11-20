@@ -1,36 +1,35 @@
-Assignment name : Loan Outcome Prediction using Random Forest
+**Assignment name : Loan Outcome Prediction using Random Forest**
 
 [prediction.ipynb file contains model training code and app.py contains api handling code]
 
 ********** TASK 1  *********
 
-1. Introduction
+**1. Introduction**
 
 In this project, I analyzed a dataset to predict loan outcomes using a Random Forest Classifier. The goal was to determine whether a loan would be repaid or defaulted based on various features such as loan details, user attributes, and GPS data.
 
-3. Data Retrieval
+**2. Data Retrieval**
    
 To begin the analysis, I retrieved data from a PostgreSQL database hosted on AWS RDS. The relevant data was stored across three key tables:
 
-Loan Outcomes: 
-
+**Loan Outcomes: **
 Contains information on whether the loan was repaid or defaulted.
-GPS Fixes: Includes data on the user’s location history.
-User Attributes: Provides details such as age, cash inflows, etc.
+**GPS Fixes:** Includes data on the user’s location history.
+**User Attributes: **Provides details such as age, cash inflows, etc.
 
-3. Data Exploration and Preprocessing
+**3. Data Exploration and Preprocessing**
 
    
-Loan Outcomes Distribution
+**Loan Outcomes Distribution**
 I first analyzed the distribution of loan outcomes (repaid vs. defaulted). The data showed a nearly equal distribution of these outcomes, which made it a balanced classification problem.
 
-User Age Distribution
+**User Age Distribution**
 I examined the age distribution of users to understand the demographics of individuals taking loans. This helped in identifying any age-related patterns in loan repayment behavior.
 
-GPS Activity of Users
+**GPS Activity of Users**
 I explored the GPS activity for each user, which indicated how frequently users were engaging with the system. This feature could be relevant in understanding user behavior, which may influence their likelihood to repay a loan.
 
-4. Feature Engineering
+**4. Feature Engineering**
 
    
 I performed several preprocessing steps to prepare the data for modeling:
@@ -40,15 +39,15 @@ To address data skewness, I applied a log transformation to the cash inflows of 
 I also aggregated the GPS data by user, which helped in creating a summary of each user’s location activity over time. This might provide additional insights into their behavior patterns.
 
 
-********** TASK 2  *********
+************ TASK 2  ***********
 
-1. Model Training
+**1. Model Training**
 Once the data was preprocessed, I trained a Random Forest Classifier on the dataset. This model was selected because it is effective for classification problems, especially when dealing with a mix of numerical and categorical features.
 
-2. Model Evaluation
+**2. Model Evaluation**
 After training the model, I evaluated its performance using metrics like accuracy, precision, recall, and F1 score. This allowed me to assess how well the model was predicting loan outcomes.
 
-********** TASK 3  *********
+********** TASK 3  *************
 
 I developed a Flask application to provide loan outcome predictions based on user input.
 
