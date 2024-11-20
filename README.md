@@ -5,16 +5,22 @@ Assignment name : Loan Outcome Prediction using Random Forest
 ********** TASK 1  *********
 
 1. Introduction
+
 In this project, I analyzed a dataset to predict loan outcomes using a Random Forest Classifier. The goal was to determine whether a loan would be repaid or defaulted based on various features such as loan details, user attributes, and GPS data.
 
-2. Data Retrieval
+3. Data Retrieval
+   
 To begin the analysis, I retrieved data from a PostgreSQL database hosted on AWS RDS. The relevant data was stored across three key tables:
 
-Loan Outcomes: Contains information on whether the loan was repaid or defaulted.
+Loan Outcomes: 
+
+Contains information on whether the loan was repaid or defaulted.
 GPS Fixes: Includes data on the user’s location history.
 User Attributes: Provides details such as age, cash inflows, etc.
 
 3. Data Exploration and Preprocessing
+
+   
 Loan Outcomes Distribution
 I first analyzed the distribution of loan outcomes (repaid vs. defaulted). The data showed a nearly equal distribution of these outcomes, which made it a balanced classification problem.
 
@@ -25,12 +31,12 @@ GPS Activity of Users
 I explored the GPS activity for each user, which indicated how frequently users were engaging with the system. This feature could be relevant in understanding user behavior, which may influence their likelihood to repay a loan.
 
 4. Feature Engineering
+
+   
 I performed several preprocessing steps to prepare the data for modeling:
 
 I transformed the loan outcome into a binary variable, where loans marked as "repaid" were assigned a value of 1, and those marked as "defaulted" were assigned a value of 0.
-
 To address data skewness, I applied a log transformation to the cash inflows of users, which helped to normalize the data distribution.
-
 I also aggregated the GPS data by user, which helped in creating a summary of each user’s location activity over time. This might provide additional insights into their behavior patterns.
 
 
