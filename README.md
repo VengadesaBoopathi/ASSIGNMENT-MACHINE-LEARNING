@@ -1,4 +1,6 @@
-Assignment name : Loan Outcome Prediction using Random Forest[predition.ipynb file contains model training code and app.py contains api handling code]
+Assignment name : Loan Outcome Prediction using Random Forest
+
+[prediction.ipynb file contains model training code and app.py contains api handling code]
 
 ********** TASK 1  *********
 
