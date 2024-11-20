@@ -34,10 +34,10 @@ I also aggregated the GPS data by user, which helped in creating a summary of ea
 
 ********** TASK 2  *********
 
-5. Model Training
+1. Model Training
 Once the data was preprocessed, I trained a Random Forest Classifier on the dataset. This model was selected because it is effective for classification problems, especially when dealing with a mix of numerical and categorical features.
 
-6. Model Evaluation
+2. Model Evaluation
 After training the model, I evaluated its performance using metrics like accuracy, precision, recall, and F1 score. This allowed me to assess how well the model was predicting loan outcomes.
 
 ********** TASK 3  *********
